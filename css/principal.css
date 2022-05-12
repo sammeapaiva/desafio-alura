@@ -1,0 +1,370 @@
+body {
+    font-family: 'Inter', sans-serif;
+    background:#F3F5FC;
+}
+
+/*Só o cabeçalho da orientação inicial*/
+.cabecalho{
+	font-size: 12px;
+	background: #0A3871;
+	box-sizing: border-box;
+	padding: 3% 10%;
+	cursor:pointer;
+}
+
+.texto-inicial {
+	font-size:2em;
+	color: white;
+}
+
+.texto-pequeno {
+	padding: 1% 0;
+	font-size:16px;
+	opacity: 0;
+	text-align:	right;
+	color:white;
+}
+
+.fadeIn {
+	transition: 1s;
+	opacity: 1;
+}
+
+.simbolo-lampada {
+	height: 40px;
+	background: #0A3871;
+	border-radius: 0 0 10px 10px;
+	margin-left: 84%;
+	cursor:pointer;
+}
+
+.logo {
+	width: 31px;
+	margin: 0 80px;
+	display:inline-flex;
+}
+
+/*Input digite seu texto*/
+
+.bloco-encriptografar{
+	display:inline-block;
+	width:50%;
+	height:50%;
+	margin: 4% 0 10% 16%;
+
+}
+
+.input-padrao {
+	font-family: 'Inter', sans-serif;
+    font-size:25px;
+    color: #0A3871;
+    width:100%;
+
+	background: #F3F5FC;
+
+	box-shadow: 0 0 0 0;
+    border: 0 none;
+    outline: 0;
+}
+
+textarea:-ms-input-placeholder {
+	font-family: 'Inter', sans-serif;
+    font-size:25px;
+    color: #0A3871;
+
+    box-shadow: 0 0 0 0;
+    border: 0 none;
+    outline: 0;
+}
+
+textarea::-webkit-input-placeholder {
+	font-family: 'Inter', sans-serif;
+    font-size:25px;
+    color: #0A3871;
+
+    box-shadow: 0 0 0 0;
+    border: 0 none;
+    outline: 0;
+}
+/*Tentei colocar esse último input junto com o 
+outro, mas daí o placeholder não fica mais azul*/
+
+/*Bloco resultado 1*/
+.bloco-resultado{
+	display:inline-block;
+
+	position:relative;
+	float:right;
+
+	width:25%;
+
+	padding-bottom: 10%;
+	margin: 3%;
+
+	background:#FFFFFF;
+	border-radius:32px;
+	box-shadow: 0 24px 32px -8px rgba(0,0,0,0.08);
+}
+
+.imagemresposta {
+	position:relative;
+	left:10%;
+	margin: 40% auto 0 auto;
+
+	vertical-align:50%;
+	width:80%;
+}
+
+.textresult1{
+	position:static;
+	text-align:center;
+
+	font-size:24px;
+	font-weight:700;
+	line-height:120%;
+	color:#344A40;
+}
+
+.textresult2{
+	position:static;
+	text-align:center;
+	display:inline-block;
+
+	padding:5%;
+
+	font-size:16px;
+	font-weight:400;
+	line-height:150%;
+	color:#495057;
+}
+
+/*Bloco resultados 2*/
+.bloco-resultado-2{
+	display:none;
+	position:relative;
+	float:right;
+
+	width:25%;
+	height:auto;
+
+	margin:3%;
+	padding-bottom:3%;
+
+	background:#FFFFFF;
+	border-radius:32px;
+	box-shadow: 0 24px 32px -8px rgba(0,0,0,0.08);
+}
+
+.texto-resultado{
+	font-size:25px;
+	margin:10%;
+	color:#495057;
+	width:85%;
+}
+
+.copiar {
+	display:block;
+	position:relative;
+
+	flex-direction:row;
+	align-items:flex-start;
+
+	text-align: center;
+    margin: 0 22% 0 22%;
+	width:50%;
+	height:8%;
+	padding: 14px;
+
+	border-radius:24px;
+	border: 1px solid #0A3871;
+	grid-gap: 8px;
+}
+
+.copiar:hover{
+	cursor:pointer;
+	font-weight: bold;
+}
+
+.invisivel{
+	display:none;
+}
+.visivel{
+	display:inline-block;
+}
+
+
+/*Fim blocos resultados*/
+
+.simbolo-atencao {
+	display:inline-block;
+	position:static;
+	margin: 0 0 0 17%;
+	height:16px;
+}
+
+.aviso p{
+	vertical-align:middle;
+	display:inline-block;
+	position:static;
+	height:16px;
+
+
+	font-weight:400;
+	color:#495057;
+	font-size:12px;
+	opacity:0.8;
+}
+
+/*Botões*/
+.criptografar {
+	margin: 2% 0 0 17%;
+	display:inline-block;
+	flex-direction:row;
+	align-items:flex-start;
+
+	position:static;
+	top:60%;
+	bottom:10%;
+
+	width:25%;
+	height:25%;
+
+	padding: 20px;
+
+	background:#0A3871;
+	border-radius:24px;
+	border: 1px solid #0A3871;
+	grid-gap: 8px;
+}
+
+.criptografar p{
+	color:white;
+	font-size:16px;
+}
+
+.descriptografar {
+	display:inline-block;
+	flex-direction:row;
+	align-items:flex-start;
+
+	position:static;
+	top:70%;
+	bottom:10%;
+
+	width:25%;
+	height:25%;
+	padding: 20px;
+
+
+	background:#D8DFE8;
+	border-radius:24px;
+	border: 1px solid #0A3871;
+	grid-gap: 8px;
+}
+
+.descriptografar p, .copiar{
+	color:#0A3871;
+	font-size:16px;
+}
+
+.criptografar:hover, .descriptografar:hover{
+	font-size:19px;
+	font-weight: bold;
+	cursor:pointer;
+}
+/*Botões*/
+
+@media screen and (max-width: 480px) {
+	.logo {
+		margin:20px;
+		display:block;
+	}
+
+	.cabecalho, .simbolo-lampada, .imagemresposta {
+		display:none;
+	}
+
+	.bloco-encriptografar{
+		height:10%;
+		width:70%;
+		margin: 4% 0 0 16%;
+	}
+
+	.criptografar, .descriptografar {
+		display:block;
+		margin: 5% auto;
+		width:80%;
+		position: relative;
+		top:0;
+	}
+
+	.bloco-resultado{
+		float:none;
+		text-align:center;
+		display:block;
+		flex-direction:column;
+		align-items:flex-start;
+
+		width:70%;
+		height:24%;
+		left:32px;
+
+		position:absolute;
+		top:100%;
+
+		margin: 5%;
+		padding: 15px;
+	}
+
+	.bloco-resultado-2{
+		float:none;
+		text-align:center;
+		flex-direction:column;
+		align-items:flex-start;
+
+		width:70%;
+		height:auto;
+		left:32px;
+
+		position:absolute;
+		top:75%;
+
+		margin: 5%;
+		padding: 15px;
+	}
+/*aqui, tive que redefinir porque já tinham outros valores pra display
+em relação ao css padrão*/
+	.invisivel{
+		display:none;
+	}
+
+	.visivel{
+		display:block;
+	}
+
+	.textresult1, .textresult2{
+		font-size:1em;
+		order: 0;
+		align-self: stretch;
+		flex-grow: 0;
+		margin: 8px 0px;
+	}	
+
+	.textresult1{
+		font-size:20px;
+	}
+
+	.copiar{
+		height:25%;
+		margin:10px auto 2px auto;
+		text-align:center;
+		position:relative;
+	}
+
+	.texto-resultado{
+		position:relative;
+		height:auto;
+		font-size:1em;
+		color:#0A3871;
+	}
+}

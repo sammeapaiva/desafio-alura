@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE-edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+		<title>Encriptador Alura</title>
+		<link rel="icon" href="simbolo.png" type="image/x-icon">
+
+		<link rel="stylesheet" href="css/reset.css">
+		<link rel="stylesheet" href="css/principal.css">
+
+		<link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
+	</head>
+
+	<body>
+		<header>
+			<div class = "cabecalho">
+				<p class = "texto-inicial">Seja bem-vindo! Para a sua segurança e da empresa, aqui você vai poder escrever e criptografar os seus textos. De mesmo modo, você também pode descriptografar as mensagens de seus colegas!</p>
+				<p class = "texto-pequeno">Clique para continuar</p>
+			</div>
+				<img src = "lampada.png" class = "simbolo-lampada" alt="Símbolo lâmpada orientação da página">
+		</header>
+
+		<main>
+			<img src = "logo alura.png" class = "logo">
+
+			<div class = "bloco-resultado" >
+				<img src="imagem-resposta.png" class = "imagemresposta">
+				<p class = "textresult1">Nenhuma mensagem encontrada</p>
+				<p class = "textresult2">Digite um texto que você deseja criptografar ou descriptografar.</p>
+			</div>
+
+			<div class = "bloco-resultado-2" >
+				<p id = "resultado" class = "texto-resultado"></p>
+				<button class = "copiar" onclick = "copiar()">Copiar texto</button>
+			</div>
+
+			<div class = "bloco-encriptografar">
+				<textarea cols="70" rows="10" id="texto-encriptografar" class="input-padrao" placeholder = "Digite seu texto"></textarea>
+			</div>
+
+			<div class = "aviso">
+				<img src = "atencao.png" class = "simbolo-atencao" alt="Símbolo atenção">
+				<p>Apenas letras minúsculas e sem acento.</p>
+			</div>
+
+			<button class="criptografar"><p>Criptografar</p></button>
+			<button class="descriptografar"><p>Descriptografar</p></button>
+		</main>
+
+		<script src="js/encriptografar.js"></script>
+		<script src="js/descriptografar.js"></script>
+		<script src="js/orientacao.js"></script>
+		<script src="js/botao-copiar.js"></script>
+	</body>
+
+	<footer>
+	</footer>
+
+
